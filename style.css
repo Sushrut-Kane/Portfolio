@@ -1,0 +1,135 @@
+html {
+  background-color: #161617;
+  color: #a9a9a8;
+  font-family: "Poppins";
+}
+
+body {
+  font-weight: bold;
+  margin: 0;
+  font-size: 18px; /* Increased font size */
+  font-family: "Poppins";
+}
+
+nav {
+  padding: 1em 0;
+  background: rgba(22, 22, 23, 0.7);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensure space between items */
+}
+
+.nav-name {
+  color: white;
+  font-size: 2.5em; /* Increased font size */
+  margin-left: 1em;
+}
+
+.nav-section {
+  font-size: 1.2em; /* Increased font size */
+  display: flex;
+  align-items: center;
+}
+
+button {
+  font-size: 16px; /* Increased font size */
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  padding: 10px 20px;
+  margin: 0 10px; /* Increased margin for more space */
+}
+
+button:focus,
+button:hover {
+  color: #fcff36;
+}
+
+button:focus:after,
+button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+button:hover {
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+button:focus {
+  outline: none;
+}
+
+header {
+  background: url("path-to-your-image.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.info {
+  background-color: rgba(22, 22, 23, 0.7);
+  padding: 40px; /* Increased padding for more space */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  width: 60%; /* Increased width for more space */
+  display: inline-block;
+}
+
+.intro-para {
+  font-size: 18px; /* Increased font size */
+  text-align: justify;
+}
+
+.yellow {
+  color: #ffc55d;
+  text-decoration: underline wavy; /* Added wavy underline */
+}
+
+.nav-yellow {
+  color: #ffc55d;
+}
+
+.resume {
+  font-size: 20px; /* Increased font size */
+  color: #ffc55d;
+}
+
+.resume a {
+  color: #ffc55d;
+  text-decoration: none;
+  border-bottom: 1px solid #ffc55d;
+  padding-bottom: 2px;
+}
+
+.resume a:hover {
+  border-bottom-width: 2px;
+}

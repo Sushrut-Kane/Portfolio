@@ -1,0 +1,98 @@
+body {
+  background-color: #161716;
+  color: #fefffe;
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll; /* Ensure the scrollbar is visible */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1e1e1e;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.nav-name {
+  font-size: 20px;
+  color: #ffc55d;
+  font-weight: bold;
+}
+
+.nav-section button {
+  background: none;
+  border: none;
+  color: #fefffe;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.nav-section button:hover {
+  color: #ffc55d;
+}
+
+.container {
+  width: 80%;
+  margin: 80px auto 0; /* Added top margin to avoid overlap with fixed navbar */
+  padding: 20px;
+}
+
+.about_me {
+  height: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  color: #ffc55d;
+}
+
+hr {
+  border: 1px solid #ffc55d;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.content {
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Custom scrollbar styles */
+body::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e1e; /* Track color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffc55d; /* Thumb color */
+  border-radius: 10px; /* Rounded corners */
+  border: 3px solid #1e1e1e; /* Space around the thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #ffc55d; /* Thumb color on hover */
+}
+.highlight {
+  color: #ffc55d;
+}
+
